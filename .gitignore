@@ -1,2 +1,12 @@
 /data
 /.idea
+
+ these lines:
+```
+# EDA results and plots
+eda_results/
+*.png
+
+
+.ipynb_checkpoints/
+
