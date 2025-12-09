@@ -1,12 +1,12 @@
-/data
-/.idea
+data/
+*.zip
+*.csv
 
- these lines:
-```
-# EDA results and plots
+# EDA results
 eda_results/
-*.png
 
+
+# IDE
+.idea/
 
 .ipynb_checkpoints/
-
