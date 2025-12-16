@@ -1,0 +1,43 @@
+# Le format Conda est souvent préféré par les data scientists car il gère mieux les dépendances système complexes via des canaux binaires (comme conda-forge).
+name: xai_medical_env
+channels:
+  - conda-forge
+  - anaconda
+  - defaults
+dependencies:
+  # Python Core
+  - python=3.10  # Utilisez la version de Python que vous avez en Colab (souvent 3.10 ou 3.11)
+
+  # ML Core et Tenseur
+  - tensorflow=2.15
+  - numpy=1.26
+  - scipy=1.12
+  - scikit-learn=1.4
+
+  # Traitement d'Image et Visualisation
+  - opencv
+  - matplotlib
+  - seaborn
+  - albumentations
+  # DVC   
+    dvc
+    dvc-gdrive # Ou dvc-s3 / dvc-azure / dvc-sftp selon votre stockage distant
+
+  # Utilitaires
+  - pandas
+  - tqdm
+  - pillow
+  - json-io  # Utilisé pour la lecture/écriture JSON
+  - pickle-mixin # Pour la gestion des fichiers .pkl
+
+  # Déploiement et API (Installé via pip dans l'environnement conda)
+  - pip:
+    - keras-cv>=0.8.2
+    - fastapi>=0.111.0
+    - uvicorn[standard]>=0.29.0
+    - streamlit>=1.33.0
+    - requests>=2.32.3
+
+# Instructions pour l'utilisateur Conda :
+# 1. Créer l'environnement: conda env create -f environment.yml
+# 2. Activer l'environnement: conda activate xai_medical_env

@@ -1,0 +1,40 @@
+# Ceci représente un exemplaire des requirements.txt pour une exécution en local
+# Assurez-vous des versions pour assurer une bonne gestion des dépendances
+
+# ==============================================================================
+# 1. MOTEUR DE CALCUL & MODELE (ML CORE)
+# ==============================================================================
+tensorflow==2.15.0     # Version critique pour le modèle et le calcul XAI (IG, Attention)
+keras_cv==0.8.2        # Utilisé pour les extensions Keras (si vous l'avez utilisé pour l'augmentation/le modèle)
+numpy==1.26.4          # Base de tous les calculs de matrices
+scipy==1.12.0          # Requis pour 'gaussian_filter' (Attention Rollout)
+
+# ==============================================================================
+# 2. PRÉTRAITEMENT & MANIPULATION DE DONNÉES
+# ==============================================================================
+pandas==2.2.2          # Gestion des données tabulaires (CSV ISIC, metadata)
+scikit-learn==1.4.1    # Utilisé pour StratifiedKFold, StandardScaler, OneHotEncoder, compute_class_weight, classification_report, confusion_matrix
+albumentations==1.4.0  # (A) Utilisé pour l'augmentation d'image professionnelle
+Pillow==10.3.0         # (PIL) Souvent requis par d'autres packages
+tqdm==4.66.2           # Pour les barres de progression
+
+# ==============================================================================
+# 3. TRAITEMENT D'IMAGE & VISUALISATION (XAI / PLOTS)
+# ==============================================================================
+opencv-python==4.9.0.80 # (cv2) Critique pour les opérations XAI, Saillance, et Heatmaps
+matplotlib==3.8.3      # Pour tous les graphiques (plots, heatmaps, XAI)
+seaborn==0.13.2        # Pour les graphiques statistiques (Matrice de confusion, distribution)
+
+# ==============================================================================
+# 4. BACKEND API (FASTAPI)
+# ==============================================================================
+fastapi==0.111.0
+uvicorn[standard]==0.29.0 # Serveur ASGI (nécessaire pour exécuter l'API)
+
+# ==============================================================================
+# 5. FRONTEND (STREAMLIT) & SERIALISATION
+# ==============================================================================
+streamlit==1.33.0
+requests==2.32.3       # Pour la communication HTTP (Streamlit <-> FastAPI)
+pickle==4.0            # Utilisé pour le chargement du générateur ou des objets sérialisés
+

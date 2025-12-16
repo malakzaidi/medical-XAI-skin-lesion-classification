@@ -13,7 +13,7 @@ import requests
 from tqdm import tqdm
 
 # Dossier de destination
-DATA_DIR = Path("data/isic_2019")
+DATA_DIR = Path("../../data/isic_2019")
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 # 🔗 LIENS OFFICIELS AWS S3 (hébergement public gratuit par ISIC)

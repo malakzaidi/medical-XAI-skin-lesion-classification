@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b03af1d-0778-4812-a74b-0d11e4c7ea2f" name="Changes" comment="" />
+    <list default="true" id="5b03af1d-0778-4812-a74b-0d11e4c7ea2f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/download-isic.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/download-isic.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +45,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\user\PycharmProjects\medical-XAI-skin-lesion-classification\notebooks" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\PycharmProjects\medical-XAI-skin-lesion-classification\scripts" />
     </key>
   </component>
   <component name="SharedIndexes">
